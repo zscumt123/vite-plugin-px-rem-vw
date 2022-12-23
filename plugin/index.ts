@@ -1,7 +1,7 @@
 import type {Plugin} from 'vite'
 import postcssrc from 'postcss-load-config'
-import pxToVw, {VwOptions} from 'postcss-px-to-viewport-8-plugin'
-import pxToRem, {RemOptions} from 'postcss-pxtorem'
+import pxToVw from 'postcss-px-to-viewport-8-plugin'
+import pxToRem from 'postcss-pxtorem'
 
 
 export interface Vw {
