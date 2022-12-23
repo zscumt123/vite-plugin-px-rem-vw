@@ -1,11 +1,11 @@
 {
   "name": "vite-plugin-px-rem-vw",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "vite plugin convert px to rem or vw",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist","env.d.ts"],
+  "files": ["dist","env.d.ts", "option.d.ts"],
   "scripts": {
     "dev": "pnpm build --watch",
     "build": "tsup --config tsup.config.ts"
