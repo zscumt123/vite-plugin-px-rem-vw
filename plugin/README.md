@@ -39,12 +39,12 @@ export default defineConfig({
   //pxtovw
   interface Vw {
     type: 'vw';
-    options?: VwOptions;
+    options?: VwConfig;
   }
   //pxtorem
   interface Rem {
       type: 'rem';
-      options?: RemOptions;
+      options?: RemConfig;
   }
   type Options = Vw | Rem;
 ```

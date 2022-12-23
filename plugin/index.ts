@@ -4,16 +4,21 @@ import pxToVw from 'postcss-px-to-viewport-8-plugin'
 import pxToRem from 'postcss-pxtorem'
 
 
+export type RemConfig = RemOptions
+export type VwConfig = VwOptions
+
+
 export interface Vw {
   type: 'vw',
-  options?: VwOptions
+  options?: VwConfig
 }
 export interface Rem {
   type: 'rem',
-  options?: RemOptions
+  options?: RemConfig
 }
 
 export type Options = Vw | Rem
+// export type RemOptions = RemOptions
 
 function isObject(value: unknown): value is Record<string, any> {
   return Object.prototype.toString.call(value) === '[object Object]'
